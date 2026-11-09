@@ -2,6 +2,19 @@
 
 @theme {
   --font-sans: Inter, system-ui, sans-serif;
+
+  /* backgrounds */
+  --color-bg: #1a1114;        /* near-black burgundy */
+  --color-card: #26181c;      /* slightly lifted surface */
+  --color-burgundy: #6b1d2e;  /* deep burgundy for borders, tags, highlights */
+
+  /* text */
+  --color-heading: #efe6e8;   /* warm off-white */
+  --color-body: #a8979b;      /* reddish grey */
+  --color-muted: #7a666b;     /* dimmer grey for small details */
+
+  /* accent */
+  --color-accent: #e0788a;    /* soft rose-red, readable on the dark bg */
 }
 
 /* dim sibling cards on hover */

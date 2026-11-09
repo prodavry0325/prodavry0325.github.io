@@ -14,5 +14,5 @@ document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
 const glow = document.getElementById('glow');
 document.addEventListener('mousemove', e => {
   glow.style.background =
-    `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(94,234,212,.08), transparent 80%)`;
+    `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(224,120,138,.08), transparent 80%)`;
 });
