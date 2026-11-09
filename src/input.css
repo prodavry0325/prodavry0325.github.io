@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, system-ui, sans-serif;
+}
+
+/* dim sibling cards on hover */
+.cards:hover .card:not(:hover) { opacity: .5; }
