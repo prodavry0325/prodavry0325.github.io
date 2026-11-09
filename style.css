@@ -1,0 +1,38 @@
+:root {
+    --bg: #fafafa;
+    --text: #1a1a1a;
+    --muted: #666;
+    --accent: #2563eb;
+    --card: #fff;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111; --text: #eee; --muted: #999;
+      --accent: #60a5fa; --card: #1a1a1a; --border: #2a2a2a;
+    }
+  }
+  
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header, main { max-width: 900px; margin: 0 auto; padding: 2rem 1.25rem; }
+  a { color: var(--accent); }
+  nav a { margin-right: 1rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+  }
+  .tags { color: var(--muted); font-size: 0.9rem; }
