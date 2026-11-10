@@ -19,3 +19,9 @@
 
 /* dim sibling cards on hover */
 .cards:hover .card:not(:hover) { opacity: .5; }
+
+@layer components {
+    .tile { @apply rounded-2xl border border-burgundy/40 bg-card/60 p-6 transition-colors hover:border-accent/40; }
+    .tag { @apply rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent; }
+    .label { @apply text-xs font-semibold uppercase tracking-widest text-muted; }
+  }
